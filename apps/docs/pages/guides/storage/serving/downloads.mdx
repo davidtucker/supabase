@@ -45,7 +45,7 @@ You can access them only by:
 You can sign a time-limited URL that you can share to your users by invoking the `createSignedUrl` method on the SDK.
 
 ```js
-const { data, error } = supabase.storage
+const { data, error } = await supabase.storage
   .from('bucket')
   .createSignedUrl('private-document.pdf', 3600)
 
